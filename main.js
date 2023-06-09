@@ -7,7 +7,7 @@ document.querySelector(".search").addEventListener("click", function () {
     var errorMessage = document.querySelector("#error-message");
     errorMessage.textContent = "Please enter a search query.";
     errorMessage.style.display = "block";
-    return; // Stop execution if there's no search query
+    return false; // Stop execution if there's no search query
   }
 
   fetchBooks(search);
